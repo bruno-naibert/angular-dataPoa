@@ -1,2 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/scss/bootstrap.scss'
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+  height: 100vh !important;
+  padding: 20px 0;
+
+  table {
+    width: 555px !important;
+    margin: auto;
+
+    .itinerario {
+      &:hover {
+        cursor: pointer;
+        background: darkgrey;
+        transition: all .2s;
+      }
+    }
+  }
+}

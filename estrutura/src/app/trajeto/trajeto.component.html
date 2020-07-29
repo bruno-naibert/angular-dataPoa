@@ -1,0 +1,11 @@
+<h3 class="text-center">Trajeto</h3>
+<p class="text-center">{{linhaId}} - {{linhaNome}} - {{linhaCod}}</p>
+<table class="table">
+  <tr *ngFor="let t of trajetoFinal">
+    <td>
+      <a href="https://www.google.com/maps/?q={{t.value.lat}},{{t.value.lng}}">
+        Latitude: {{t.value.lat + 1}} - Longitude: {{t.value.lng + 1}}
+      </a>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,20 @@
+<h3 class="text-center mb-3">Lotação</h3>
+<table class="table" *ngIf="lotacao$ | async as lotacoes; else loading">
+	<tr>
+		<thead class="thead-dark">
+			<tr>
+				<th>Nome</th>
+				<th>Código</th>
+			</tr>
+			<tr *ngFor="let l of lotacoes">
+				<td>{{l.nome}}</td>
+				<td>{{l.codigo}}</td>
+			</tr>
+		</thead>
+	</tr>
+</table>
+<ng-template #loading>   
+	<div class="text-center">
+		<span>Carregando...</span>
+	</div>    
+</ng-template>
